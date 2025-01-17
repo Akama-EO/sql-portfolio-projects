@@ -1,4 +1,4 @@
-# 01 - Danny Ma's 8 Week SQL-challenge
+# 01 - Danny Ma's 8-Week SQL Challenge
 This portfolio project contains solutions to tasks in **[Danny's 8-week SQL challenge](https://8weeksqlchallenge.com)**.
 
 Each case-study folder contains the following files
