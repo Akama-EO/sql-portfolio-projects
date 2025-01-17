@@ -313,7 +313,7 @@ ORDER BY s.customer_id;
 
 ***
 
-###  10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January
+###  10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
 #### Steps
 1. Find the program_last_date which is 7 days after a customer joins the program (including their join date)
