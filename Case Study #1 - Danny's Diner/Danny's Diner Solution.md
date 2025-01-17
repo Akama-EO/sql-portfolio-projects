@@ -189,7 +189,7 @@ WITH diner_info AS
 		 ON mb.customer_id = s.customer_id
    WHERE order_date >= join_date)
 SELECT 
-	customer_id,
+    customer_id,
     product_name,
     order_date
 FROM diner_info
