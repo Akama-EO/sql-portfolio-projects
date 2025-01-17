@@ -62,11 +62,12 @@ ORDER BY customer_id;
 
 ```sql
 WITH order_info AS
-  (SELECT customer_id,
-          order_date,
-          product_name,
-          DENSE_RANK() OVER(PARTITION BY s.customer_id
-                            ORDER BY s.order_date) AS ranking
+  (SELECT
+       customer_id,
+       order_date,
+       product_name,
+       DENSE_RANK() OVER(PARTITION BY s.customer_id
+                         ORDER BY s.order_date) AS ranking
    FROM sales AS s
    INNER JOIN menu AS m 
 	  ON s.product_id = m.product_id)
@@ -88,13 +89,14 @@ GROUP BY customer_id,
 
 ```sql
 WITH order_info AS
-  (SELECT customer_id,
-          order_date,
-          product_name,
-          DENSE_RANK() OVER(PARTITION BY s.customer_id
-                            ORDER BY s.order_date) AS order_ranking,
-		      DENSE_RANK() OVER(PARTITION BY s.customer_id
-					                  ORDER BY m.product_name) AS product_ranking
+  (SELECT
+      customer_id,
+      order_date,
+      product_name,
+      DENSE_RANK() OVER(PARTITION BY s.customer_id
+                        ORDER BY s.order_date) AS order_ranking,
+      DENSE_RANK() OVER(PARTITION BY s.customer_id
+	                ORDER BY m.product_name) AS product_ranking
    FROM sales AS s
    INNER JOIN menu AS m 
 	  ON s.product_id = m.product_id)
@@ -119,11 +121,11 @@ GROUP BY customer_id,
 
 ```sql
 SELECT Top (1) 
-	product_name AS most_purchased_item,
-  COUNT(s.product_id) AS order_count
+    product_name AS most_purchased_item,
+    COUNT(s.product_id) AS order_count
 FROM menu AS m
 	INNER JOIN sales AS s 
-		ON m.product_id = s.product_id
+        	ON m.product_id = s.product_id
 GROUP BY product_name
 ORDER BY order_count DESC
 ``` 
@@ -173,7 +175,7 @@ WHERE ranking = 1;
 ```sql
 WITH diner_info AS
   (SELECT 
-	  product_name,
+      product_name,
       s.customer_id,
       order_date,
       join_date,
@@ -207,7 +209,7 @@ WHERE first_item=1;
 ```sql
 WITH diner_info AS
   (SELECT 
-	  product_name,
+      product_name,
       s.customer_id,
       order_date,
       join_date,
@@ -268,7 +270,7 @@ ORDER BY customer_id;
 #### Had the customer joined the loyalty program before making the purchases, total points that each customer would have accrued
 ```sql
 SELECT 
-	customer_id,
+  customer_id,
   SUM(CASE
         WHEN product_name = 'sushi' THEN price*20 ELSE price*10
       END) AS customer_points
@@ -289,7 +291,7 @@ ORDER BY customer_id;
 #### Total points that each customer has accrued after taking a membership
 ```sql
 SELECT 
-	s.customer_id,
+    s.customer_id,
     SUM(CASE
            WHEN product_name = 'sushi' THEN price*20 ELSE price*10
         END) AS customer_points
@@ -363,7 +365,7 @@ Create basic data tables that Danny and his team can use to quickly derive insig
 
 ```sql
 SELECT 
-	s.customer_id,
+    s.customer_id,
     product_name,
 	order_date,
     price,
