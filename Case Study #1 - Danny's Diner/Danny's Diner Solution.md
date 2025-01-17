@@ -139,8 +139,8 @@ ORDER BY order_count DESC
 
 ```sql
 WITH order_info AS
-  (SELECT 
-	  product_name,
+  (SELECT
+      product_name,
       customer_id,
       COUNT(product_name) AS order_count,
       RANK() OVER(PARTITION BY customer_id
