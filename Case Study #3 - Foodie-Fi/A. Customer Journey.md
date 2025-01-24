@@ -125,6 +125,6 @@ ORDER BY customer_id;
 
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md) to view the solution solution of **B. Data Analysis Questions**
 
-Click [here](https://github.com/Akama-EO/8-Week-SQL-Challenge) to move back to the 8-Week-SQL-Challenge repository!
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
 
 
