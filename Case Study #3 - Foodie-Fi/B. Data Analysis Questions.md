@@ -19,7 +19,7 @@
 
 ```sql
 SELECT 
-  count(DISTINCT customer_id) AS customer_subscriptions
+    count(DISTINCT customer_id) AS customer_subscriptions
 FROM subscriptions;
 ``` 
 	
@@ -34,8 +34,8 @@ FROM subscriptions;
 
 ```sql
 SELECT 
-	extract(month FROM start_date) AS month_number,
-  count(DISTINCT customer_id) AS monthly_distribution
+    extract(month FROM start_date) AS month_number,
+    count(DISTINCT customer_id) AS monthly_distribution
 FROM subscriptions
 JOIN plans USING (plan_id)
 WHERE plan_id = 0
@@ -64,9 +64,9 @@ GROUP BY month_number;
 
 ```sql
 SELECT 
-	plan_id,
-  plan_name,
-  count(*) AS total_subscriptions
+    plan_id,
+    plan_name,
+    count(*) AS total_subscriptions
 FROM subscriptions
 JOIN plans USING (plan_id)
 WHERE extract(year FROM start_date) > 2020
@@ -88,8 +88,8 @@ ORDER BY plan_id;
 
 ```sql
 SELECT 
-  plan_name, count(DISTINCT customer_id) as churn_count,
-  concat(round(100 * count(DISTINCT customer_id) / (SELECT count(DISTINCT customer_id) FROM subscriptions), 1), ' %') as churn_percentage
+    plan_name, count(DISTINCT customer_id) as churn_count,
+    concat(round(100 * count(DISTINCT customer_id) / (SELECT count(DISTINCT customer_id) FROM subscriptions), 1), ' %') as churn_percentage
 FROM subscriptions
 JOIN plans USING (plan_id)
 WHERE plan_id = 4
@@ -101,24 +101,6 @@ GROUP BY plan_id, plan_name;
 |-----------|-------------|------------------|
 | churn     | 307         | 30.0 %           |
 
-```sql
-WITH counts_cte AS
-  (SELECT plan_name,
-          count(DISTINCT customer_id) AS distinct_customer_count,
-          SUM(CASE
-                  WHEN plan_id=4 THEN 1
-                  ELSE 0
-              END) AS churned_customer_count
-   FROM subscriptions
-   JOIN plans USING (plan_id))
-SELECT *,
-       round(100*(churned_customer_count/distinct_customer_count), 2) AS churn_percentage
-FROM counts_cte;
-``` 
-	
-#### Result set:
-![image](https://user-images.githubusercontent.com/77529445/164981288-a4f71aaf-148d-406b-b5a4-c1658dddef25.png)
-
 ***
 
 ###  5. How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
@@ -126,14 +108,15 @@ FROM counts_cte;
 ```sql
 WITH cte AS
 (
-  SELECT customer_id, plan_id, 
-          lead(plan_id, 1) over(PARTITION BY customer_id
-                                ORDER BY start_date) AS next_plan
+  SELECT
+      customer_id, plan_id, 
+      lead(plan_id, 1) over(PARTITION BY customer_id
+                            ORDER BY start_date) AS next_plan
    FROM subscriptions
 )
 SELECT 
-  count(customer_id) AS churn_count,
-  concat(round(100 * count(customer_id) / (SELECT count(DISTINCT customer_id) FROM subscriptions), 1), ' %') AS churn_percentage
+    count(customer_id) AS churn_count,
+    concat(round(100 * count(customer_id) / (SELECT count(DISTINCT customer_id) FROM subscriptions), 1), ' %') AS churn_percentage
 FROM cte
 WHERE next_plan = 4 AND plan_id = 0;
 ``` 
@@ -151,18 +134,18 @@ WHERE next_plan = 4 AND plan_id = 0;
 WITH cte AS
 (
   SELECT 
-    customer_id, 
-    plan_id, 
-    plan_name,
-    lag(plan_id, 1) over(PARTITION BY customer_id ORDER BY start_date) AS previous_plan
+      customer_id, 
+      plan_id, 
+      plan_name,
+      lag(plan_id, 1) over(PARTITION BY customer_id ORDER BY start_date) AS previous_plan
    FROM subscriptions
-	JOIN plans USING (plan_id)
+   JOIN plans USING (plan_id)
 )
 SELECT 
-  plan_id,
-  plan_name,
-  count(distinct customer_id) AS customer_count,
-  concat(round(100 * count(distinct customer_id) / (SELECT count(distinct customer_id) FROM subscriptions), 1), ' %') AS customer_percentage
+    plan_id,
+    plan_name,
+    count(distinct customer_id) AS customer_count,
+    concat(round(100 * count(distinct customer_id) / (SELECT count(distinct customer_id) FROM subscriptions), 1), ' %') AS customer_percentage
 FROM cte
 WHERE previous_plan = 0
 GROUP BY plan_id, plan_name
@@ -182,10 +165,10 @@ ORDER BY plan_id;
 
 ```sql
 SELECT 
-	plan_id,
-  plan_name,
-  count(distinct customer_id) AS customer_count,
-	concat(round(100 * count(distinct customer_id) / (SELECT count(distinct customer_id) FROM subscriptions), 1), ' %') AS customer_percentage
+    plan_id,
+    plan_name,
+    count(distinct customer_id) AS customer_count,
+	  concat(round(100 * count(distinct customer_id) / (SELECT count(distinct customer_id) FROM subscriptions), 1), ' %') AS customer_percentage
 FROM subscriptions
 JOIN plans USING (plan_id)
 WHERE start_date <='2020-12-31' 
@@ -208,10 +191,10 @@ ORDER BY plan_id;
 
 ```sql
 SELECT 
-  plan_id,
-  plan_name,
-  count(distinct customer_id) AS customer_count,
-  concat(round(100 * count(distinct customer_id) / (SELECT count(distinct customer_id) FROM subscriptions), 1), ' %') AS customer_percentage
+    plan_id,
+    plan_name,
+    count(distinct customer_id) AS customer_count,
+    concat(round(100 * count(distinct customer_id) / (SELECT count(distinct customer_id) FROM subscriptions), 1), ' %') AS customer_percentage
 FROM subscriptions
 JOIN plans USING (plan_id)
 WHERE plan_id = 3 AND extract(year FROM start_date) = 2020
@@ -229,22 +212,22 @@ GROUP BY plan_id, plan_name;
 ###  9. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
 
 ```sql
-WITH trial_plan_cte AS
+WITH cte_01 AS
 (
   SELECT *
   FROM subscriptions
   JOIN plans USING (plan_id)
-  WHERE plan_id=0
-), annual_plan_cte AS
+  WHERE plan_id = 0
+), cte_02 AS
 (
   SELECT *
   FROM subscriptions
   JOIN plans USING (plan_id)
-  WHERE plan_id=3
+  WHERE plan_id = 3
 )
-SELECT round(avg((annual_plan_cte.start_date - trial_plan_cte.start_date)), 2) AS average_conversion
-FROM trial_plan_cte
-INNER JOIN annual_plan_cte USING (customer_id);
+SELECT round(avg((cte_02.start_date - cte_01.start_date)), 2) AS average_conversion
+FROM cte_01
+INNER JOIN cte_02 USING (customer_id);
 ``` 
 
 #### Result set:
@@ -312,4 +295,6 @@ WHERE plan_id = 2 AND next_plan = 1 AND extract(year FROM start_date) = 2020;
 
 ***
 
-Click [here](https://github.com/manaswikamila05/8-Week-SQL-Challenge) to move back to the 8-Week-SQL-Challenge repository!
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/C.%20Challenge%20Payment%20Question.md) to view the solution for **C. Challenge Payment Question**
+
+Click [here](https://github.com/Akama-EO/8-Week-SQL-Challenge) to move back to the 8-Week-SQL-Challenge repository!
