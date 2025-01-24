@@ -10,7 +10,7 @@ Try to keep it as short as possible - you may also want to run some sort of join
 
 ```sql
 SELECT 
-	customer_id,
+    customer_id,
     plan_id,
     plan_name,
     start_date
@@ -35,7 +35,7 @@ LIMIT 5
 ```sql
 SELECT 
     min(start_date) AS min_start_date,
-	max(start_date) AS max_start_date
+    max(start_date) AS max_start_date
 FROM subscriptions
 JOIN plans USING (plan_id);
 ```
@@ -51,9 +51,9 @@ JOIN plans USING (plan_id);
 
 ```sql
 SELECT 
-	plan_id,
-	plan_name,
-	count(distinct(customer_id)) AS subscriptions
+    plan_id,
+    plan_name,
+    count(distinct(customer_id)) AS subscriptions
 FROM subscriptions
 JOIN plans USING (plan_id)
 GROUP BY plan_id, plan_name
@@ -75,10 +75,10 @@ ORDER BY plan_id;
 
 ```sql
 SELECT 
-	customer_id,
-	plan_id,
-	plan_name,
-	start_date
+    customer_id,
+    plan_id,
+    plan_name,
+    start_date
 FROM subscriptions
 JOIN plans USING (plan_id)
 WHERE customer_id BETWEEN 1 AND 10
@@ -123,6 +123,6 @@ ORDER BY customer_id;
 4. There was an approximate 30% churn rate (307 from 1,000 customers).
 5. The preliminary analysis of the top 10 customers showed 2 customers churned from the *basic monthly* plan.
 
-Click [here](https://github.com/manaswikamila05/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%203%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md) to view the solution solution of B. Data Analysis Questions!
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md) to view the solution solution of B. Data Analysis Questions!
 
 
