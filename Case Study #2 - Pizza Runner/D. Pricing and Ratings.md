@@ -210,7 +210,7 @@ FROM
 
 ***
 
-Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/E.%20Bonus%20Questions.md) to view the solution for **E. Bonus Questions**
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/E.%20Bonus%20Questions.md) to view the solution for **E. Bonus Questions**.
 
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
 
