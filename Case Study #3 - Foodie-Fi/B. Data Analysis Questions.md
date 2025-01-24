@@ -296,6 +296,6 @@ WHERE plan_id = 2 AND next_plan = 1 AND extract(year FROM start_date) = 2020;
 
 ***
 
-Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/C.%20Challenge%20Payment%20Question.md) to view the solution for **C. Challenge Payment Question**
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/C.%20Challenge%20Payment%20Question.md) to view the solution for **C. Challenge Payment Question**.
 
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
