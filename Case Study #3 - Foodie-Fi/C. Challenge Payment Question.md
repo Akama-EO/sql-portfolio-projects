@@ -20,4 +20,4 @@ The Foodie-Fi team wants you to create a new payments table for the year 2020 th
 
 ***
 
-Click [here](https://github.com/Akama-EO/8-Week-SQL-Challenge) to move back to the 8-Week-SQL-Challenge repository!
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
