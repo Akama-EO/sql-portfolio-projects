@@ -35,12 +35,12 @@ There are 5 customer plans.
 - When customers *churn* - they will keep their access until the end of their current billing period but the start_date will be technically the day they decided to cancel their service.
 
 ## Entity Relationship Diagram
-![alt text](https://github.com/manaswikamila05/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%203%20-%20Foodie-Fi/ERD.jpg)
+![alt text](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/ERD.jpg)
 
 ## Case Study Solutions
-- [A. Customer Journey](https://github.com/manaswikamila05/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%203%20-%20Foodie-Fi/A.%20Customer%20Journey.md)
-- [B. Data Analysis Questions](https://github.com/manaswikamila05/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%203%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md)
-- [C. update here](and here...)
+- [A. Customer Journey](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/A.%20Customer%20Journey.md)
+- [B. Data Analysis Questions](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md)
+- [C. Challenge Payment Question](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/C.%20Challenge%20Payment%20Question.md)
 
 We'll implement the solutions for this case study in Postgre SQL
 
