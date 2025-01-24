@@ -43,3 +43,5 @@ Three key datasets for this case study
 12. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
   
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%231%20-%20Danny's%20Diner/Danny's%20Diner%20Solution.md) to view the solution solution of the case study!
+
+NB: Queries for this case study was implemented in both [MySQL](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%231%20-%20Danny's%20Diner/Danny's%20Diner%20Solution%20(MySQL%20v8.4).sql) and [Microsoft SQL Server](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%231%20-%20Danny's%20Diner/Danny's%20Diner%20Solution%20(SQL%20Server%20v19.4).sql).
