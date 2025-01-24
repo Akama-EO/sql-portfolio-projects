@@ -88,7 +88,8 @@ ORDER BY plan_id;
 
 ```sql
 SELECT 
-    plan_name, count(DISTINCT customer_id) as churn_count,
+    plan_name,
+    count(DISTINCT customer_id) as churn_count,
     concat(round(100 * count(DISTINCT customer_id) / (SELECT count(DISTINCT customer_id) FROM subscriptions), 1), ' %') as churn_percentage
 FROM subscriptions
 JOIN plans USING (plan_id)
