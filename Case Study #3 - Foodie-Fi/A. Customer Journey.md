@@ -123,7 +123,7 @@ ORDER BY customer_id;
 4. There was an approximate 30% churn rate (307 from 1,000 customers).
 5. The preliminary analysis of the top 10 customers showed 2 customers churned from the *basic monthly* plan.
 
-Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md) to view the solution solution of **B. Data Analysis Questions**
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%233%20-%20Foodie-Fi/B.%20Data%20Analysis%20Questions.md) to view the solution solution of **B. Data Analysis Questions**.
 
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
 
