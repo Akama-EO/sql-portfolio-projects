@@ -265,6 +265,6 @@ FROM
 
 ***
 
-Click [here](https://github.com/Akama-EO/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%204%20-%20Data%20Bank/C.%20Data%20Allocation%20Challenge.md) to view the solution of **C. Data Allocation Challenge**.
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/C.%20Data%20Allocation%20Challenge.md) to view the solution of **C. Data Allocation Challenge**.
 
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
