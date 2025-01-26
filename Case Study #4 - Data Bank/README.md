@@ -74,7 +74,7 @@ Below is a sample of the top 10 rows of the customer_transactions.
 
  
 ## Entity Relationship Diagram
-![image](https://user-images.githubusercontent.com/77529445/165748352-09dfcafd-07a6-4bf0-b171-7ba0ec75aua22.png)
+![image](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/ERD.jpg)
   
 ## Case Study Solutions
 - [A. Customer Nodes Exploration](https://github.com/Akama-EO/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%204%20-%20Data%20Bank/B.%20Customer%Nodes%20Exploration.md)
