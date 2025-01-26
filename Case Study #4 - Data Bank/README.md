@@ -77,9 +77,9 @@ Below is a sample of the top 10 rows of the customer_transactions.
 ![image](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/ERD.jpg)
   
 ## Case Study Solutions
-- [A. Customer Nodes Exploration](https://github.com/Akama-EO/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%204%20-%20Data%20Bank/B.%20Customer%Nodes%20Exploration.md)
-- [B. Customer Transactions](https://github.com/Akama-EO/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%204%20-%20Data%20Bank/B.%20Customer%20Transactions.md)
-- [C. Data Allocation Challenge](https://github.com/Akama-EO/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%204%20-%20Data%20Bank/C.%20Data%20Allocation%20Challenge.md)
+- [A. Customer Nodes Exploration](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/A.%20Customer%20Nodes%20Exploration.md)
+- [B. Customer Transactions](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/B.%20Customer%20Transactions.md)
+- [C. Data Allocation Challenge](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/C.%20Data%20Allocation%20Challenge.md)
 
 The solutions for this case study was implemented in MySQL v8.4.
 
