@@ -179,7 +179,7 @@ WHERE row_index IN (50th_percentile, 80th_percentile, 95th_percentile)
 ***
 
 
-Click [here](https://github.com/Akama-EO/8-Week-SQL-Challenge/blob/main/Case%20Study%20%23%204%20-%20Data%20Bank/B.%20Customer%20Transactions.md) to view the solution of **B. Customer Transactions**.
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%234%20-%20Data%20Bank/B.%20Customer%20Transactions.md) to view the solution of **B. Customer Transactions**.
 
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects) to move back to the 8-Week-SQL-Challenge repository!
 
