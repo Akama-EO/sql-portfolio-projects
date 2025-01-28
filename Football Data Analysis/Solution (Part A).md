@@ -1,4 +1,4 @@
-# :football :ball Footbal Players Analysis (Part A)
+# ⚽🏉🎱 Footbal Players Analysis (Part A)
 
 ## Case Study Questions
 ###  1. Write a query to find the top 20 players in the "Arizona" team.
