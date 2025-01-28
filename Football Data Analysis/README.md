@@ -1,4 +1,4 @@
-# Footbal Players Analysis
+# ⚽🏉🎱 Footbal Players Analysis
 <p align="center">
 <img src="super-bowl.png" alt="Image" width="450" height="450">
 
