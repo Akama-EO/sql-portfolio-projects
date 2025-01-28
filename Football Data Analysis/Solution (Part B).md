@@ -1,4 +1,4 @@
-# :football :ball Footbal Players Analysis (Part B)
+# ⚽🏉🎱 Footbal Players Analysis (Part B)
 
 ## Case Study Questions
 ###  1. Write a query to find the heaviest player for each position.
