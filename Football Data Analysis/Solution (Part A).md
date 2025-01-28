@@ -98,7 +98,7 @@ where Age is null;
 
 ***
 
-###  7. Write a query to find players who are rookies (Exp = 'R').
+###  7. Write a query to find the top 5 players who are rookies (Exp = 'R').
 
 ```sql
 select top 5 * from footballplayers
@@ -135,7 +135,7 @@ and Team = 'New Orleans';
 
 ***
 
-###  9. Write a query to find players weighing more than 250 pounds.
+###  9. Write a query to find the first 5 players weighing more than 250 pounds.
 
 ```sql
 select top 5 * from footballplayers
@@ -153,7 +153,7 @@ where Wt > 250;
 
 ***
 
-###  10. Write a query to calculate the average height of players at each position.
+###  10. Write a query to calculate the average height of the top 10 players at each position.
 
 ```sql
 select top 10 Pos, avg(Inches) as Avg_Ht from footballplayers 
