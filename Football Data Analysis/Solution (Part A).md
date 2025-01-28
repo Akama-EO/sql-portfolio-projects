@@ -1,7 +1,7 @@
 # ⚽🏉🎱 Footbal Players Analysis (Part A)
 
 ## Case Study Questions
-###  1. Write a query to find the top 20 players in the "Arizona" team.
+###  1. Write a query to find the top 5 players in the "Arizona" team.
 
 ```sql
 select top 5 * from footballplayers
@@ -46,7 +46,7 @@ where Ft > 6 and [In] > 2;
 	
 #### Result set: No data returnrd 
 
-###  4. Write a query to find all players who attended the "Washington" college.
+###  4. Write a query to find the first 5 players who attended the "Washington" college.
 
 ```sql
 select * from footballplayers
@@ -101,12 +101,17 @@ where Age is null;
 ###  7. Write a query to find players who are rookies (Exp = 'R').
 
 ```sql
-select * from footballplayers
+select top 5 * from footballplayers
 where [Exp] = 'R';
 ``` 
 	
 #### Result set:
-
+| 2022 | New Orleans | Kiko Alonso       | 47 | OLB | 6-3  | 239 | NULL | R | Oregon           | Kiko    | Alonso    | 6 | 3  | 75 |
+|------|-------------|-------------------|----|-----|------|-----|------|---|------------------|---------|-----------|---|----|----|
+| 2022 | Arizona     | Marcell Ateman    | 84 | WR  | 6-4  | 215 | NULL | R | Oklahoma State   | Marcell | Ateman    | 6 | 4  | 76 |
+| 2022 | Arizona     | Darrell Baker Jr. | 31 | CB  | 6-1  | 190 | 24   | R | Georgia Southern | Darrell | Baker Jr. | 6 | 1  | 73 |
+| 2022 | New Orleans | Josh Black        | 57 | DT  | 6-3  | 290 | 24   | R | Syracuse         | Josh    | Black     | 6 | 3  | 75 |
+| 2022 | Arizona     | Tae Daley         | 48 | S   | 5-11 | 201 | 23   | R | Virginia Tech    | Tae     | Daley     | 5 | 11 | 71 |
 
 ***
 
