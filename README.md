@@ -18,6 +18,7 @@ MySQL, PostgreSQL and Microsoft SQL Server
 
 # Project 02 - Football Data Analysis
 This project utilizes a simple dataset encompassing various aspects of 2 football teams and their player statistics. 
+
 Click [here](https://github.com/Akama-EO/sql-portfolio-projects/tree/main/Football%20Data%20Analysis) to view solution to the project
 
 ### Support
