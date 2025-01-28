@@ -16,5 +16,9 @@ MySQL, PostgreSQL and Microsoft SQL Server
 * 💰[Case Study #4 - Data Bank](https://github.com/Akama-EO/8-week-sql-challange/tree/main/Case%20Study%20%234%20-%20Data%20Bank)
 * 🏬[Case Study #5 - Data Mart](https://github.com/Akama-EO/8-week-sql-challange/tree/main/Case%20Study%20%235%20-%20Data%20Mart)
 
+# Project 02 - Football Data Analysis
+This project utilizes a simple dataset encompassing various aspects of 2 football teams and their player statistics. 
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/tree/main/Football%20Data%20Analysis) to view solution to the project
+
 ### Support
 Please, if you like this project, give a ⭐️!
