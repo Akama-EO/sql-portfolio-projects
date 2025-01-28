@@ -48,12 +48,12 @@ Each record in the dataset is related to a specific aggregated slice of the unde
 | 31/8/20   | AFRICA | Retail   | C3      | New           | 111032       | 3888162  |
 
 ## Entity Relationship Diagram
-![image](https://user-images.githubusercontent.com/77529445/165748352-09dfcafd-07a6-4bf0-b171-7ba0ec75aua22.png)
+![image](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%235%20-%20Data%20Mart/ERD.jpg)
 
 ## Case Study Solutions
-- [A. Data Cleansing Steps]()
-- [B. Data Exploration]()
-- [C. Before & After Analysis]()
-- [D. Bonus Question]()
+- [A. Data Cleansing Steps](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%235%20-%20Data%20Mart/1.%20Data%20Cleansing%20Steps.md)
+- [B. Data Exploration](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%235%20-%20Data%20Mart/2.%20Data%20Exploration.md)
+- [C. Before & After Analysis](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%235%20-%20Data%20Mart/3.%20Before%20%26%20After%20Analysis.md)
+- [D. Bonus Question](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Case%20Study%20%235%20-%20Data%20Mart/4.%20Bonus%20Question.md)
 
 The solutions for this case study was implemented in MySQL v8.4.
