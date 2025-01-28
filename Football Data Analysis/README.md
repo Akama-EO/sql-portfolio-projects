@@ -1,4 +1,4 @@
-# :football :ball Footbal Players Analysis
+# Footbal Players Analysis
 <p align="center">
 <img src="super-bowl.png" alt="Image" width="450" height="450">
 
@@ -29,6 +29,6 @@ For this analysis, we will utilize a simple dataset encompassing various aspects
 
 ## Case Study Questions 
   
-Click [here]() to view the solution for Part A.
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Football%20Data%20Analysis/Solution%20(Part%20A).md) to view the solution for Part A.
   
-Click [here]() to view the solution for Part B.
+Click [here](https://github.com/Akama-EO/sql-portfolio-projects/blob/main/Football%20Data%20Analysis/Solution%20(Part%20B).md) to view the solution for Part B.
