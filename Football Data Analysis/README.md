@@ -21,7 +21,7 @@ Despite the availability of extensive football data, transforming this raw infor
 
 Addressing these questions is crucial for coaches aiming to optimize strategies, scouts seeking talent, and analysts focused on performance evaluation.
 
-## Datasets used
+## Datasets Used
 For this analysis, we will utilize a simple dataset encompassing various aspects of 2 football teams and their player statistics. 
 
 *Source*: Click [here](data.csv) to view the dataset.
